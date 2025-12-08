@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery | BK Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold text-purple-300 mb-6">Gallery</h1>
+<p class="text-gray-300 mb-4">A showcase of 3D renders, animation, and creative media. Videos embedded via YouTube.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div>
+    <h2 class="text-lg text-purple-200 mb-2">Blender Render #1</h2>
+    <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div>
+    <h2 class="text-lg text-purple-200 mb-2">DaVinci Resolve Project</h2>
+    <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+{% endblock %}

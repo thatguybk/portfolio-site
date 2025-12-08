@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+{% block title %}Home | BK Portfolio{% endblock %}
+
+
+{% block content %}
+<h1 class="text-3xl font-bold text-purple-300 mb-4">Welcome to My Portfolio</h1>
+<p class="text-lg text-gray-300">
+Hi, I’m Bradley Joshua Khan, a Computer Science student, 3D designer, and tech creative.
+This site showcases my work in data analytics, full-stack development, and 3D Rendering.
+</p>
+<div class="mt-6 space-x-4">
+<a href="/experience" class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">My Qualifications</a>
+<a href="/projects" class="inline-block bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Explore My Work</a>
+</div>
+<div class="mt-6">
+    <a href="{{ url_for('static', filename='BradleyKhanResume.pdf') }}" target="_blank"
+        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700" 
+        download>
+        View Resume
+    </a>
+</div>
+{% endblock %}
+

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Blender",
+    "description": "A 3D render of animation.",
+    "video_url": "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+  },
+  {
+    "title": "Flask Apartment Site",
+    "description": "Developed multiple websites using Flask MVC and Jinja for listing and comparing apartment data, displaying pokedex data, weather data with backend and frontend integration. Some of these websites also included JWT Tokenization and Authentication.",
+    "video_url": ""
+  },
+  {
+    "title": "Data Analytics Dashboard",
+    "description": "Visual analysis of US energy data using Python and Plotly, served via Streamlit.",
+    "video_url": "https://www.youtube.com/embed/YOUR_OTHER_VIDEO_ID"
+  }
+]

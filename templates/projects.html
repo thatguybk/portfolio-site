@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | BK Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold text-purple-300 mb-6">Projects</h1>
+
+<div class="space-y-10">
+  {% for project in projects %}
+    <div>
+      <h2 class="text-xl text-purple-200 font-semibold">{{ project.title }}</h2>
+      <p class="text-gray-300">{{ project.description }}</p>
+      {% if project.video_url %}
+        <div class="aspect-w-16 aspect-h-9 mt-2">
+          <iframe class="w-full h-72 rounded" src="{{ project.video_url }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
+
