@@ -9,17 +9,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans text-center">
+<body class="bg-gray-900 text-white font-sans text-center relative">
+  <!-- Sidebar menu -->
+  <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="p-6">
+      <button onclick="toggleSidebar()" class="text-white text-xl absolute top-4 right-4">&times;</button>
+      <nav class="flex flex-col space-y-4 mt-12 text-left">
+        <a href="/" class="hover:text-purple-300">Home</a>
+        <a href="/experience" class="hover:text-purple-300">Experience</a>
+        <a href="/projects" class="hover:text-purple-300">Projects</a>
+        <a href="/gallery" class="hover:text-purple-300">Gallery</a>
+        <a href="/contact" class="hover:text-purple-300">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Menu button -->
+  <button onclick="toggleSidebar()" class="absolute top-4 left-4 z-50 text-white text-2xl">&#9776;</button>
+
   <header class="py-6 shadow-lg">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <div class="text-purple-400 text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Playwrite NO', sans-serif;">BradleyKhan</div>
-      <nav class="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-        <a href="/" class="hover:underline">Home</a>
-        <a href="/experience" class="hover:underline">Experience</a>
-        <a href="/projects" class="hover:underline">Projects</a>
-        <a href="/gallery" class="hover:underline">Gallery</a>
-        <a href="/contact" class="hover:underline">Contact</a>
-      </nav>
+      <div class="text-purple-400 text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Playwrite NO', sans-serif;">BK</div>
       <div class="flex justify-center mt-4 space-x-4">
         <a href="https://github.com/thatguybk" target="_blank" rel="noopener noreferrer" class="text-white hover:text-purple-300">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="h-5 w-5">
@@ -45,5 +55,13 @@
   <footer class="text-center text-sm text-gray-500 py-6">
     © {{ current_year }} Bradley Joshua Khan. All rights reserved.
   </footer>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('-translate-x-full');
+    }
+  </script>
 </body>
 </html>
+
