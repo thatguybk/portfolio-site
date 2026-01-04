@@ -1,13 +1,16 @@
+from datetime import datetime
 from flask import Flask, render_template
 import json
 import os
 
 
 app = Flask(__name__)
+if __name__ == "__main__":
+   app.run(host="0.0.0.0", port=5000, debug=True)
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", current_year=datetime.now().year)
 
 @app.route("/experience")
 def experience():
