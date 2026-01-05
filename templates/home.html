@@ -1,25 +1,30 @@
 {% extends "base.html" %}
+{% block title %}Home - BK Portfolio{% endblock %}
 
+{% block body_class %}retro-body{% endblock %}
 
-{% block title %}Home | BK Portfolio{% endblock %}
-
-
-{% block content %}
-<h1 class="text-3xl font-bold text-purple-300 mb-4">Welcome to My Portfolio</h1>
-<p class="text-lg text-gray-300">
-Hi, I’m Bradley Joshua Khan, a Computer Science student, 3D designer, and tech creative.
-This site showcases my work in data analytics, full-stack development, and 3D Rendering.
-</p>
-<div class="mt-6 space-x-4">
-<a href="/experience" class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">My Qualifications</a>
-<a href="/projects" class="inline-block bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Explore My Work</a>
-</div>
-<div class="mt-6">
-    <a href="{{ url_for('static', filename='BradleyKhanResume.pdf') }}" target="_blank"
-        class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700" 
-        download>
-        View Resume
-    </a>
-</div>
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/green_retro.css') }}">
 {% endblock %}
 
+{% block content %}
+<div class="retro-container">
+    <h1 class="retro-header">WELCOME TO MY PORTFOLIO</h1>
+    <p class="retro-subtext">
+        Insert coin to begin<span class="bouncing-dots">
+            <span>.</span><span>.</span><span>.</span>
+        </span>
+    </p>
+
+  <div class="menu-buttons">
+    <a href="{{ url_for('experience') }}" class="menu-button">Experience</a>
+    <a href="{{ url_for('projects') }}" class="menu-button">Projects</a>
+    <a href="{{ url_for('gallery') }}" class="menu-button">Gallery</a>
+    <a href="{{ url_for('contact') }}" class="menu-button">Contact</a>
+  </div>
+</div>
+
+
+  <p class="retro-footer">© {{ current_year }} Bradley Joshua Khan</p>
+</div>
+{% endblock %}
