@@ -15,6 +15,28 @@
           <iframe class="w-full h-72 rounded" src="{{ project.video_url }}" frameborder="0" allowfullscreen></iframe>
         </div>
       {% endif %}
+
+      {% if project.presentation_url %}
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-full rounded-lg"
+                src="{{ project.presentation_url }}"
+                frameborder="0"
+                allowfullscreen></iframe>
+      </div>
+      {% endif %}
+
+      <div class="flex justify-center gap-6 mt-4">
+
+        {% if project.website_url %}
+          <a href="{{ project.website_url }}" class="text-purple-400 hover:underline" target="_blank">Website</a>
+        {% endif %}
+        {% if project.documentation_url %}
+          <a href="{{ project.documentation_url }}" class="text-purple-400 hover:underline" target="_blank">Documentation</a>
+        {% endif %}
+        {% if project.github_url %}
+          <a href="{{ project.github_url }}" class="text-purple-400 hover:underline" target="_blank">GitHub Repo</a>
+        {% endif %}
+        
     </div>
   {% endfor %}
 </div>

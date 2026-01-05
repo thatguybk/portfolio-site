@@ -1,8 +1,11 @@
 [
   {
-    "title": "Blender",
-    "description": "A 3D render of animation.",
-    "video_url": "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    "title": "Data Analytics Dashboard",
+    "description": "Visual analysis of US energy data using Python and Plotly, served via Streamlit.",
+    "documentation_url": "/static/docs/new Green_Energy_Feasibility_Investment.pdf",
+    "website_url": "https://greenenergyfeasibility.streamlit.app/",
+    "github_url": "https://github.com/thatguybk/Big-Data-Project",
+    "presentation_url": ""
   },
   {
     "title": "Flask Apartment Site",
@@ -10,8 +13,10 @@
     "video_url": ""
   },
   {
-    "title": "Data Analytics Dashboard",
-    "description": "Visual analysis of US energy data using Python and Plotly, served via Streamlit.",
-    "video_url": "https://www.youtube.com/embed/YOUR_OTHER_VIDEO_ID"
+    "title": "Blender",
+    "description": "A 3D render of animation.",
+    "video_url": "https://www.youtube.com/embed/5-47pMUcDXE"
   }
+
+
 ]
