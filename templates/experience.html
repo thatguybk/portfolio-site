@@ -1,14 +1,97 @@
 {% extends "base.html" %}
 
-{% block title %}Qualifications | BK Portfolio{% endblock %}
+{% block title %}Experience | BK Portfolio{% endblock %}
+
+{% block body_class %}pokemon-body{% endblock %}
+
+{%block extra_css%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pokemon.css') }}">
+{% endblock %}
 
 {% block content %}
-<h1 class="text-3xl font-bold text-purple-300 mb-6">Experience</h1>
+<h1 class="experience-title">Experience</h1>
 
-<div class="space-y-6">
+<div class="experience-grid">
+
+  <div class="poke-card common">
+    <div class="poke-header">
+      <h2>Crocs</h2>
+      <span class="year-badge">2024–2025</span>
+    </div>
+
+    <div class="poke-subtitle">Point of Sale Associate</div>
+    <span class="type-badge retail">Retail</span>
+
+    <ul class="poke-stats">
+      <li>Customer Relations</li>
+      <li>Inventory Management</li>
+      <li>Problem Solving</li>
+    </ul>
+
+    <p class="poke-flavor">
+      “A reliable frontline associate skilled in fast-paced customer environments.”
+    </p>
+  </div>
+
+  <div class="poke-card rare">
+    <div class="poke-header">
+      <h2>DeepFocusTT</h2>
+      <span class="year-badge">2024</span>
+    </div>
+
+    <div class="poke-subtitle">Camera Operator</div>
+    <span class="type-badge media">Media</span>
+
+    <ul class="poke-stats">
+      <li>Camera Operations</li>
+      <li>DaVinci Resolve</li>
+      <li>Live Streaming</li>
+      <li>Audio Engineering</li>
+    </ul>
+
+    <p class="poke-flavor">
+      “Captures moments with precision and technical control.”
+    </p>
+  </div>
+
+</div>
+
+<h1 class="experience-title">Education</h1>
+
+<div class="poke-card legendary">
+  <div class="poke-header">
+    <h2>University of the West Indies</h2>
+    <span class="year-badge">2020-Present</span>
+  </div>
+
+  <div class="poke-subtitle">
+    BSc Computer Science (Special)
+  </div>
+
+  <span class="type-badge dev">Legendary</span>
+
+  <ul class="poke-stats">
+    <li>Data Structures & Algorithms</li>
+    <li>Software Engineering I & II</li>
+    <li>Big Data Analytics</li>
+    <li>Systems Design</li>
+  </ul>
+
+  <p class="poke-flavor">
+    “A long-term evolution focused on mastering core computer science fundamentals.”
+  </p>
+</div>
+
+
+
+
+
+<h1 class="experience-title">Experience</h1>
+
+<div class="experience-grid">
   <div>
     <h2 class="text-xl font-semibold text-purple-200">Crocs | Foot Trends Limited</h2>
-    <p class="text-gray-300">Point of Sale Associate, Salesclerk | Sep 2024 – Jan 2025</p>
+    <p class="text-gray-300">Point of Sale Associate, Salesclerk | Sep 2024 - Jan 2025</p>
     <ul class="list-disc list-inside text-gray-400">
       <li>Customer Relations</li>
       <li>Inventory Management</li>
@@ -17,7 +100,7 @@
   </div>
   <div>
     <h2 class="text-xl font-semibold text-purple-200">DeepFocusTT</h2>
-    <p class="text-gray-300">Camera Operator, Equipment Manager | Mar 2024 – Aug 2024</p>
+    <p class="text-gray-300">Camera Operator, Equipment Manager | Mar 2024 - Aug 2024</p>
     <ul class="list-disc list-inside text-gray-400">
       <li>Full production experience</li>
       <li>Camera Operations</li>
@@ -55,4 +138,7 @@
     </ul>
   </div>
 </div>
+
 {% endblock %}
+
+
