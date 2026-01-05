@@ -10,9 +10,17 @@
 {% block content %}
 <div class="pixel-bg">
     {% for i in range(60) %}
-    <div class="pixel" style="top: {{ range(0, 100) | random }}%; left: {{ range(0, 100) | random }}%; animation-delay: {{ range(0, 10) | random / 10 }}s;"></div>
+    <div class="pixel" data-top="{{ range(0, 100) | random }}" data-left="{{ range(0, 100) | random }}" data-delay="{{ range(0, 10) | random / 10 }}"></div>
   {% endfor %}
 </div>
+
+<script>
+document.querySelectorAll('.pixel').forEach(el => {
+    el.style.top = el.dataset.top + '%';
+    el.style.left = el.dataset.left + '%';
+    el.style.animationDelay = el.dataset.delay + 's';
+});
+</script>
 
 <div class="retro-container">
     <h1 class="retro-header">WELCOME TO MY PORTFOLIO</h1>
