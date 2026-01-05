@@ -8,10 +8,16 @@
 {% endblock %}
 
 {% block content %}
+<div class="pixel-bg">
+    {% for i in range(60) %}
+    <div class="pixel" style="top: {{ range(0, 100) | random }}%; left: {{ range(0, 100) | random }}%; animation-delay: {{ range(0, 10) | random / 10 }}s;"></div>
+  {% endfor %}
+</div>
+
 <div class="retro-container">
     <h1 class="retro-header">WELCOME TO MY PORTFOLIO</h1>
     <p class="retro-subtext">
-        Insert coin to begin<span class="bouncing-dots">
+        Insert coin <span class="bouncing-dots">
             <span>.</span><span>.</span><span>.</span>
         </span>
     </p>
