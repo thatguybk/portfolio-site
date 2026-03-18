@@ -45,7 +45,7 @@ body.pokemon-body {
 }
 
 .poke-card.epic {
-  border-color: #7fffd4;
+  border-color: #d679df;
 }
 
 /* LEGENDARY */
@@ -91,7 +91,7 @@ body.pokemon-body {
 }
 
 .poke-header h2 {
-  font-size: 0.9rem;
+  font-size: 2rem;
   color: #6ecbff;
 }
 
@@ -99,14 +99,14 @@ body.pokemon-body {
   background: #ffe066;
   color: #000;
   padding: 0.2rem 0.6rem;
-  font-size: 0.55rem;
+  font-size: 0.70rem;
   border-radius: 6px;
 }
 
 /* Subtitle */
 .poke-subtitle {
   margin-top: 0.4rem;
-  font-size: 0.65rem;
+  font-size: 0.90rem;
   color: #c2e7ff;
 }
 
@@ -115,7 +115,7 @@ body.pokemon-body {
   display: inline-block;
   margin: 0.8rem 0;
   padding: 0.25rem 0.7rem;
-  font-size: 0.55rem;
+  font-size: 0.70rem;
   border-radius: 999px;
   color: #000;
 }
@@ -132,6 +132,10 @@ body.pokemon-body {
   background: #7fffd4;
 }
 
+.type-badge.finance{
+  background: #d679df;
+}
+
 /* Skills */
 .poke-stats {
   list-style: none;
@@ -140,7 +144,7 @@ body.pokemon-body {
 }
 
 .poke-stats li {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-bottom: 0.35rem;
 }
 
@@ -152,7 +156,7 @@ body.pokemon-body {
 /* Flavor text */
 .poke-flavor {
   font-style: italic;
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   color: #cfcfcf;
   margin-top: 0.6rem;
 }
